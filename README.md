@@ -4,7 +4,7 @@
 
 1. **Clone the Repository:**
    ```bash
-   git clone [https://github.com/your-username/agrigistics.git](https://github.com/vian-duppie/agrigistics-assessment.git)
+   git clone https://github.com/vian-duppie/agrigistics-assessment.git
    cd agrigistics
    ```
 
