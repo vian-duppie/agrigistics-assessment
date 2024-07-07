@@ -1,0 +1,100 @@
+<div class="panel">
+    <div class="panel__header">
+        <div class="panel__header-top">
+            <div class="panel__header-top_button">
+                <img
+                    src="../../../assets/icons/ic-left-arrow.svg"
+                    alt="Left Arrow"
+                />
+            </div>
+            
+            <div class="panel__header-top_name">
+                <app-ui-text 
+                    tag="h2" 
+                    textAlign="left" 
+                    [text]="name" 
+                    fontWeight="Bold"
+                    [truncate]="true"
+                >
+                </app-ui-text>
+            </div>
+        </div>
+        <!-- Button -->
+
+        <!-- Employee Details -->
+        <div class="panel__header-bottom">
+            <div class="panel__header-bottom_number panel__header-bottom_item">
+                <app-ui-text 
+                    tag="label" 
+                    textAlign="left" 
+                    text="No." 
+                    fontWeight="light"
+                />
+                <app-ui-text 
+                    tag="label" 
+                    textAlign="left" 
+                    [text]="number" 
+                    fontWeight="bold"
+                />
+            </div>
+            <div class="panel__header-bottom_team panel__header-bottom_item">
+                <app-ui-text 
+                    tag="label" 
+                    textAlign="left" 
+                    text="Team" 
+                    fontWeight="light"
+                />
+                <app-ui-text 
+                    tag="label" 
+                    textAlign="left" 
+                    [text]="team" 
+                    fontWeight="bold"
+                />
+            </div>
+        </div>
+    </div>
+    <div class="panel__overview">
+        <div class="panel__overview-title">
+            <app-ui-text 
+                tag="h2" 
+                textAlign="left" 
+                text="Overview" 
+                fontWeight="Bold"
+            />
+        </div>
+        <div class="panel__overview-info">
+            <app-info-card
+                label="Total Earnings"
+                [value]="totalEarnings"
+                backgroundColor="secondary"
+            />
+            <app-info-card
+                label="Total Deductions"
+                [value]="totalDeductions"
+                backgroundColor="error"
+            />
+            <app-info-card
+                label="Net Total"
+                [value]="netTotal"
+                backgroundColor="primary"
+            />
+        </div>
+        <div class="panel__overview-info">
+            <app-info-card
+                label="UIF"
+                [value]="uif"
+                backgroundColor="secondary-50"
+            />
+            <app-info-card
+                label="PAYE"
+                [value]="paye"
+                backgroundColor="secondary-50"
+            />
+            <app-info-card
+                label="Total"
+                [value]="totalContributions"
+                backgroundColor="secondary-50"
+            />
+        </div>
+    </div>
+</div>

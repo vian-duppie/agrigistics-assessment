@@ -1,0 +1,71 @@
+{
+    "name": "Hannah Smoterich-Barr Jip", 
+    "number": "E008", 
+    "team": "General Worker", 
+    "total_earnings": "R 13,140.68",
+    "total_deductions": "R 12,000.00",
+    "net_total": "R 1,140.68",
+    "total_contributions": "R 35.32",
+    "uif": "R 35.32",
+    "paye": "R 0.00",
+    "items": [
+        {
+            "name": "Drafting",
+            "description": "Lorem ipsum dolor",
+            "group": "Group 1",
+            "quantity": 3,
+            "price": 20.00
+        },
+        {
+            "name": "Driving",
+            "description": "",
+            "group": "Group 1",
+            "quantity": 4,
+            "price": null
+        },
+        {
+            "name": "Cutting",
+            "description": "",
+            "group": "Group 2",
+            "quantity": 6,
+            "price": null
+        },
+        {
+            "name": "Task 1",
+            "description": "Lorem ipsum dolor",
+            "group": "Group 3",
+            "quantity": 3,
+            "price": 400.00
+        },
+        {
+            "name": "Task 2",
+            "description": "-",
+            "group": "Group 2",
+            "quantity": 4,
+            "price": 599.00
+        },
+        {
+            "name": "Task 3",
+            "description": "Lorem ipsum dolor",
+            "group": "Group 3",
+            "quantity": 6,
+            "price": 60.00
+        },
+        {
+            "name": "Task 4",
+            "description": "-",
+            "group": "Group 2",
+            "quantity": 3,
+            "price": 80.00
+        },
+        {
+            "name": "Task 5",
+            "description": "Lorem ipsum dolor",
+            "group": "Group 1",
+            "quantity": 4,
+            "price": 100.00
+        }
+    ]
+}
+
+

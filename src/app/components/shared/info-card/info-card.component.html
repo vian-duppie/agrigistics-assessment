@@ -1,0 +1,24 @@
+<div class="card">
+    <div class="card__icon"  [ngClass]="backgroundColor">
+        <img
+            src="../../../../assets/icons/ic-home.svg"
+            alt="Home"
+        />
+    </div>
+    <div class="card__info">
+        <app-ui-text 
+            tag="label" 
+            textAlign="right" 
+            [text]="label" 
+            fontWeight="light"
+        >
+        </app-ui-text>
+        <app-ui-text 
+            tag="h4" 
+            textAlign="right" 
+            [text]="value" 
+            fontWeight="bold"
+        >
+        </app-ui-text>
+    </div>
+</div>

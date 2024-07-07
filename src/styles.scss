@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    background-color: var(--primary-50);
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --white: #FFFFFF;
+
+    --primary: #166983;
+    --primary-50: #F6F5FD;
+    --primary-300: #CCC1F1;
+    --primary-500: #9574DC;
+    --primary-600: #8558CF;
+    --primary-700: #176982;
+
+    --secondary: #A5C757;
+    --secondary-50: #FAFBEB;
+    --secondary-200: #EAEE9A;
+    --secondary-500: #CCBF28;
+    --secondary-600: #AE9720;
+
+    --grey-100: #E6E6E6;
+    --grey-800: #333333;
+
+    --error: #FF3D00;
+}
+

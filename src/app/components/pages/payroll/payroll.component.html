@@ -1,0 +1,35 @@
+<div class="payroll">
+    <div class="payroll__panel">
+        <app-employee-info-panel
+            [name]="employeeData.name"
+            [number]="employeeData.number"
+            [team]="employeeData.team"
+            [totalEarnings]="employeeData.total_earnings"
+            [totalDeductions]="employeeData.total_deductions"
+            [netTotal]="employeeData.net_total"
+            [uif]="employeeData.uif"
+            [paye]="employeeData.paye"
+            [totalContributions]="employeeData.total_contributions"
+        ></app-employee-info-panel>
+    </div>
+
+    <div class="payroll__earnings">
+        <div class="payroll__earnings-toolbar">
+            <div class="payroll__earnings-toolbar_search">
+                <app-ui-input (searchChange)="onSearchChange($event)"></app-ui-input>
+            </div>
+            <div class="payroll__earnings-toolbar_actions">
+                <app-ui-button type="secondary" label="Secondary"></app-ui-button>
+
+                <div class="payroll__earnings-toolbar_actions-seperator"></div>
+
+                <app-ui-button type="primary" label="Primary"></app-ui-button>
+            </div>
+        </div>
+        <app-employee-earnings-table [items]="filteredItems"></app-employee-earnings-table>
+    </div>
+
+    <div class="test">
+
+    </div>
+</div>

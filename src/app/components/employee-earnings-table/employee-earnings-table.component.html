@@ -1,0 +1,55 @@
+<div class="container">
+	<table class="container__table">
+	  <thead>
+		<tr>
+		  <th style="width: 50px"></th>
+		  <th style="width: 240px" (click)="sortData('name')">
+			Name
+			<img *ngIf="sortColumn === 'name'" 
+				 [src]="sortDirection === 'asc' ? upArrowIcon : downArrowIcon" 
+				 class="sort-icon"/>
+		  </th>
+		  <th style="width: 400px" (click)="sortData('description')">
+			Description
+			<img *ngIf="sortColumn === 'description'" 
+				 [src]="sortDirection === 'asc' ? upArrowIcon : downArrowIcon" 
+				 class="sort-icon"/>
+		  </th>
+		  <th style="width: 128px" (click)="sortData('group')">
+			Type
+			<img *ngIf="sortColumn === 'group'" 
+				 [src]="sortDirection === 'asc' ? upArrowIcon : downArrowIcon" 
+				 class="sort-icon"/>
+		  </th>
+		  <th style="width: 128px" (click)="sortData('quantity')">
+			Quantity
+			<img *ngIf="sortColumn === 'quantity'" 
+				 [src]="sortDirection === 'asc' ? upArrowIcon : downArrowIcon" 
+				 class="sort-icon"/>
+		  </th>
+		  <th style="width: 128px; text-align: right" (click)="sortData('price')">
+			Rate
+			<img *ngIf="sortColumn === 'price'" 
+				 [src]="sortDirection === 'asc' ? upArrowIcon : downArrowIcon" 
+				 class="sort-icon"/>
+		  </th>
+		  <th></th>
+		</tr>
+	  </thead>
+	  <tbody>
+		<tr *ngFor="let item of items">
+		  <td>
+			<img *ngIf="!item.price || item.description === ''"
+				 src="../../../assets/icons/ic-error.svg"/>
+		  </td>
+		  <td>{{ item.name }}</td>
+		  <td>{{ item.description || '-' }}</td>
+		  <td>{{ item.group }}</td>
+		  <td>{{ item.quantity }}</td>
+		  <td class="right-align">{{ item.price !== null ? ('R' + item.price) : '-' }}</td>
+		  <td><button class="primary-action">Primary Action</button></td>
+		</tr>
+	  </tbody>
+	</table>
+  </div>
+  

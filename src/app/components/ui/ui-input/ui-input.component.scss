@@ -1,0 +1,35 @@
+@import url('../../../../styles.scss');
+
+.container {
+    height: 40px;
+    padding: 0px 8px;
+    background-color: var(--primary-50);
+    border-radius: 28px;
+    
+    &__inner {
+        display: flex;
+        height: fit-content;
+        padding: 8px 4px;
+
+        input {
+            height: 24px;
+            width: 100%;
+            background: transparent;
+            border: none;
+            font-size: 16px;
+            color: var(--grey-800);
+            font-weight: 400;
+
+            &:focus,
+            &:focus-visible,
+            &:focus-within {
+                outline: none;
+            }
+        }
+    }
+
+    img {
+        width: 24px;
+        height: 24px;
+    }
+}
